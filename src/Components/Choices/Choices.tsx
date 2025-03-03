@@ -2,7 +2,7 @@ import { choicesStyles, ChoicesTypes } from "../../Models/Choice";
 import './Choices.css'
 
 type Props = {
-  onClick: () => void;
+  onClick?: () => void;
   type: ChoicesTypes;
 };
 
