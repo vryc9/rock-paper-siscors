@@ -11,9 +11,9 @@ export interface Choice {
 }
 
 export const choicesStyles: ChoiceStyle = {
-    ROCK: { className: "rock", icon: rock },
-    PAPER: { className: "paper", icon: paper },
-    SCISSORS: { className: "scissors", icon: scissors },
+    ROCK: {className: "rock", icon: rock},
+    PAPER: {className: "paper", icon: paper},
+    SCISSORS: {className: "scissors", icon: scissors},
 };
 
 export type ChoicesTypes = 'ROCK' | 'PAPER' | 'SCISSORS';
