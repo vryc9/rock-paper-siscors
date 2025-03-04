@@ -1,15 +1,15 @@
 import "./Score.css";
 import logo from "../../assets/images/logo.svg";
-const Score = () => {
+const Score = ({ score }: { score: number }) => {
   return (
     <div className="score-container">
       <div className="score-wrapper">
-        <div className="logo" >
+        <div className="logo">
           <img height={80} width={120} src={logo} alt="logo" />
         </div>
         <div className="score">
           <p>Score</p>
-          <strong>12</strong>
+          <strong>{score}</strong>
         </div>
       </div>
     </div>

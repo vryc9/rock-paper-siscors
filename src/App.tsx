@@ -10,9 +10,9 @@ type StepMap = Record<number, JSX.Element>;
 
 function App() {
   const choices: Choice[] = [
-    { type: "ROCK", owner: undefined },
-    { type: "PAPER", owner: undefined },
-    { type: "SCISSORS", owner: undefined },
+    { type: "ROCK" },
+    { type: "PAPER" },
+    { type: "SCISSORS" },
   ];
 
   const [currentStep, setCurrentStep] = useState<number>(1);
@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="content">
-        <Score />
+        <Score score={player.score} />
         {step[currentStep] || <p>Step non défini</p>}
       </div>
     </div>

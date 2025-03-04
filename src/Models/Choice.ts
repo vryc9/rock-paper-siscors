@@ -1,14 +1,12 @@
 import rock from "../assets/images/icon-rock.svg";
 import paper from "../assets/images/icon-paper.svg";
 import scissors from "../assets/images/icon-scissors.svg";
-import { Player } from "./Player";
 
 
 type Style = { className: string; icon: string }
 type ChoiceStyle = Record<ChoicesTypes, Style>
 
 export interface Choice {
-    owner?: Player,
     type: ChoicesTypes
 }
 
