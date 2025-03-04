@@ -6,7 +6,7 @@ export const Context = createContext<{
   bot: Player;
   setPlayer: (player: Player) => void;
   setBot: (bot: Player) => void;
-} | null>(null); // Assure-toi que TypeScript comprend bien le contexte
+} | null>(null);
 
 export const ContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [player, setPlayer] = useState<Player>({ isComputer: false, score: 0, choice: undefined });
